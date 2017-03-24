@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>正佳广场室内地图</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="plugins/leaflet2017/leaflet.css"/>
+    <link rel="stylesheet" href="css/map-leaflet-int.css"/>
+
+
+</head>
+<body>
+
+<div id='map'>
+</div>
+
+
+<div class="floor-choose-box">
+    <div id="currentFloor" class="current-floor"> F1 </div>
+    <div class="floor-choose-div">
+        <ul id="floorChooseList" class="floor-choose-list">
+            <li id="B1">B1</li>
+            <li id="F1" class="active">F1</li>
+            <li id="F2">F2</li>
+            <li id="F3">F3</li>
+            <li id="F4">F4</li>
+            <li id="F5">F5</li>
+            <li id="F6">F6</li>
+            <li id="F7">F7</li>
+            <li id="F7G">F7G</li>
+        </ul>
+
+    </div>
+
+</div>
+<div class="description">
+    <img class="logopic" src="img/logopics/4a4e4259.png">
+    <div class="detail">
+        <h5 class="name" id="NAME"></h5>
+        <p>
+            <span class="grade">
+                <i class="fa fa-star lighten" aria-hidden="true"></i>
+                <i class="fa fa-star lighten" aria-hidden="true"></i>
+                <i class="fa fa-star lighten" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+            <span class="popularity">人气:2546</span><br/>
+        </p>
+        <p class="location">F1楼 西南方位 XXXXXXX XXX附近</p>
+    </div>
+</div>
+
+<script src="plugins/jquery-1.11.1.min.js"></script>
+<script src="plugins/leaflet2017/leaflet-src.js"></script>
+
+<script src="js/style.js"></script><!--地图样式json数据-->
+
+<script src="plugins/Leaflet.LayerGroup.Collision/rbush.js"></script><!--图标碰撞-->
+<script src="plugins/Leaflet.LayerGroup.Collision/Leaflet.LayerGroup.Collision_dh.js"></script><!--图标碰撞-->
+
+<script src="plugins/polygonCenterPoint/tinyqueue.js"></script><!--修复凹形图中心点不在面上-->
+<script src="plugins/polygonCenterPoint/polylabel.js"></script><!--修复凹形图中心点不在面上-->
+
+<script src="js/map-leaflet-int.js"></script>
+
+</body>
+</html>

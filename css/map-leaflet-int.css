@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+html, body, #map {
+    height: 100vh;
+    width: 100vw;
+}
+
+.floor-choose-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 55px;
+    z-index: 10000000000000;
+    /*关键代码*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.floor-choose-box .current-floor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px;
+    border: 3px solid #91beff;
+    border-radius: 50%;
+    background-color: #1781ff;
+     box-shadow: 0px 0px 5px 0px #607D8B;
+    cursor: pointer;
+    z-index: 2;
+    text-shadow: none;
+}
+
+.floor-choose-div {
+    z-index: 1;
+    position: absolute;
+    top: 32px;
+    left: 4px;
+    width: 43px;
+    max-height: 185px;
+    overflow: auto;
+    border-radius: 10px;
+    /* padding: 10px 0; */
+    background-color: rgba(78, 79, 80, 0.5);
+    display: none;
+    box-shadow: 1px 1px 5px 0px #607D8B;
+}
+
+.floor-choose-div::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.floor-choose-box .floor-choose-list {
+    list-style: none;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin: 16px 0 6px 0px;
+}
+
+.floor-choose-box .floor-choose-list li {
+    padding: 8px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #999;
+}
+
+.floor-choose-box .floor-choose-list li:last-child {
+    border-bottom: none;
+}
+
+.floor-choose-box .floor-choose-list li.active {
+    color: #ffeb3b;
+}
+
+.description {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(245, 248, 249, 0.9);
+    border-top: 1px solid #eee;
+    box-shadow: 1px 0px 15px 0px #888;
+    z-index: 1000000;
+    display: none;
+}
+
+.description .logopic {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    float: left;
+}
+
+.description .detail {
+    width: 60vw;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.description .detail .name {
+    margin: 0 0 6px 0;
+    font-size: 1.2em;
+    color: #222;
+}
+
+.description .detail .fa-star {
+    color: #aaa
+}
+
+.description .detail .lighten {
+    color: #ffc107
+}
+
+.description .detail .location {
+    display: inline-block;
+}
+
+.description .detail {
+    font-size: 0.75em;
+    color: #666;
+}
+
+.description .detail p {
+    margin: 1px 0;
+}
